@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca2</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var broj=prompt("Vnesi telefonski broj");
+    var del1,del2,del3;
+    del1=broj.slice(0,3);
+    del2=broj.slice(3,6);
+    del3=broj.slice(6,9);
+    console.log(del1+"\t"+del2+"\t"+del3);
+    if(del1==="070" || del1==="071" || del1==="072"){
+        document.write(del1+"/"+del2+"-"+del3+" T-Mobile");
+    }
+    else if(del1==="075" || del1==="076"){
+        document.write(del1+"/"+del2+"-"+del3+" One");
+    }
+    else if(del1==="077" || del1==="078"){
+        document.write(del1+"/"+del2+"-"+del3+" Vip");
+    }
+</script>
+</body>
+</html>

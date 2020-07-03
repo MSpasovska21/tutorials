@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca3</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var str=prompt("Vnesi string: ");
+    var elementi=str.split(" ");
+    var max=0,poz=0;
+    for(var i=0;i<elementi.length;i++){
+        if(elementi[i]>max){
+            max=elementi[i];
+            poz=i;
+        }
+    }
+    document.write("Najdolg zbor: "+elementi[poz]);
+</script>
+</body>
+</html>

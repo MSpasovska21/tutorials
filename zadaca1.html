@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca1</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+    var broj=prompt("Vnesi tricifren broj:");
+    broj=parseInt(broj);
+    if(!isNaN(broj) && broj>99 && broj<1000){
+        var s=broj/100;
+        s=parseInt(s);
+        var e=broj%10;
+        e=parseInt(e);
+
+        if(s===e)
+            document.write("Vneseniot broj e palindrom");
+        else
+            document.write("Vneseniot broj ne e palindrom");
+    }
+    else
+        document.write("Nevaliden vnes");
+</script>
+</body>
+</html>
